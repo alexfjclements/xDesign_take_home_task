@@ -1,0 +1,17 @@
+@startuml
+class Munro {
+	String name,
+    Integer height,
+    Enum hillCategory,
+    String gridReference
+}
+
+enum HillCategory {
+	MUNRO,
+    MUNROTOP,
+
+    String type
+}
+
+Munro *-- HillCategory
+@enduml
