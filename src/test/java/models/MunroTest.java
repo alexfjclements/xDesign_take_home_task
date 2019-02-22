@@ -3,6 +3,8 @@ package models;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -11,12 +13,43 @@ public class MunroTest {
 
     @Before
     public void before() {
-        munro = new Munro("Ben More", 1245, MunroType.MUNRO, "NE6678383");
+        ArrayList<String> params = new ArrayList<String>();
+        params.add("1");
+        params.add("1");
+        params.add("http://www.streetmap.co.uk/newmap.srf?x=277324&y=730857&z=3&sv=277324");
+        params.add("730857&st=4&tl=~&bi=~&lu=N&ar=y");
+        params.add("http://www.geograph.org.uk/gridref/NN7732430857");
+        params.add("http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1");
+        params.add("Ben Chonzie");
+        params.add("1");
+        params.add("01A");
+        params.add("1.1");
+        params.add("931");
+        params.add("3054");
+        params.add("51 52");
+        params.add("OL47W 368W 379W");
+        params.add("NN773308");
+        params.add("NN7732430857");
+        params.add("277324");
+        params.add("730857");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+        params.add("MUN");
+
+        munro = new Munro(params);
     }
 
     @Test
     public void getName() {
-        assertEquals("Ben More", munro.getName());
+        assertEquals("Ben Chonzie", munro.getName());
     }
 
     // Issue with getHeight test relating to IntelliJ's ambiguous method call bug
@@ -24,7 +57,7 @@ public class MunroTest {
     // workaround by converting height to string for the test
     @Test
     public void getHeight() {
-        assertEquals("1245", munro.getHeight().toString());
+        assertEquals("931", munro.getHeight().toString());
     }
 
     @Test
@@ -34,6 +67,6 @@ public class MunroTest {
 
     @Test
     public void getGridReference() {
-        assertEquals("NE6678383", munro.getGridReference());
+        assertEquals("NN773308", munro.getGridReference());
     }
 }
