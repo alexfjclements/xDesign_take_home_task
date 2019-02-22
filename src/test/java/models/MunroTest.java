@@ -21,10 +21,11 @@ public class MunroTest {
 
     // Issue with getHeight test relating to IntelliJ's ambiguous method call bug
     // https://intellij-support.jetbrains.com/hc/en-us/community/posts/360001797759-Ambiguous-method-call-bug
-//    @Test
-//    public void getHeight() {
-//        assertEquals(1245, munro.getHeight());
-//    }
+    // workaround by converting height to string for the test
+    @Test
+    public void getHeight() {
+        assertEquals("1245", munro.getHeight().toString());
+    }
 
     @Test
     public void getType() {
