@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c062ea2b-4e2c-4939-b5f9-30bdb3fd2e54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/components/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/DataParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Munro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Munro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/components/DataParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/components/DataParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Munro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="218">
               <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding>
                 <element signature="e#684#685#0" expanded="true" />
@@ -31,6 +30,15 @@
                 <element signature="e#881#882#0" expanded="true" />
                 <element signature="e#917#918#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/MunroType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -50,13 +58,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/components/DataParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="368">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/components/DataParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
               <folding>
                 <element signature="e#379#380#0" expanded="true" />
                 <element signature="e#464#465#0" expanded="true" />
@@ -213,7 +219,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550945388734" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550947815730" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -347,18 +353,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataParserTest - 2019.02.23 at 17h 58m 01s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataParserTest - 2019.02.23 at 17h 58m 16s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataParserTest - 2019.02.23 at 17h 58m 25s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataParserTest - 2019.02.23 at 17h 59m 26s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataParserTest - 2019.02.23 at 18h 00m 01s.xml">
       <configuration name="DataParserTest" configurationId="JUnit" />
     </history-entry>
@@ -375,6 +369,18 @@
       <configuration name="DataParserTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DataParserTest - 2019.02.23 at 18h 07m 58s.xml">
+      <configuration name="DataParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataParserTest - 2019.02.23 at 18h 40m 56s.xml">
+      <configuration name="DataParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataParserTest - 2019.02.23 at 18h 42m 56s.xml">
+      <configuration name="DataParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataParserTest - 2019.02.23 at 18h 43m 13s.xml">
+      <configuration name="DataParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataParserTest - 2019.02.23 at 18h 43m 43s.xml">
       <configuration name="DataParserTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -414,13 +420,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/components/models/Munro.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/components/placeholder.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/models/MunroTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/MunroType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/MunroTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -532,19 +531,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/munroTestData.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/MunroList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Munro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="218">
           <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="e#684#685#0" expanded="true" />
@@ -559,23 +548,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/MunroType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/MunroList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/components/DataParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="368">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/components/DataParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="225">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
             <element signature="e#379#380#0" expanded="true" />
             <element signature="e#464#465#0" expanded="true" />

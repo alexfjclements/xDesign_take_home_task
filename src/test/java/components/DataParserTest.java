@@ -13,11 +13,11 @@ public class DataParserTest {
     @Before
     public void before() throws IOException {
         dataParser = new DataParser();
-        dataParser.dataBuilder();
+        dataParser.dataBuilder("munrotab_v6.2");
     }
 
     @Test
     public void getMunroListFromFile() {
-        assertEquals(402, dataParser.parsedMunroList().getMunroList().size());
+        assertEquals(402, dataParser.getParsedMunroList().getMunroList().size());
     }
 }

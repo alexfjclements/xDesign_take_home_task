@@ -1,17 +1,46 @@
 @startuml
+class MunroList {
+	- ArrayList<Munro> munroList
+
+    + addMunro()
+    + getMunroList()
+}
+
 class Munro {
-	String name,
-    Integer height,
-    Enum hillCategory,
-    String gridReference
+	- String name,
+    - Double height,
+    - Enum hillCategory,
+    - String gridReference
+
+    - defineType()
+    + getName()
+    + getHeight()
+    + getType()
+    + getGridReference()
 }
 
 enum HillCategory {
 	MUNRO,
     MUNROTOP,
 
-    String type
+    - String munroType
+
+    + getMunroType()
+}
+
+class DataParser {
+	- MunroList munroList
+    - ArrayList<String> params
+
+    - pathNameBuilder()
+    - addToList()
+    - parseLine()
+    + dataBuilder()
+    + getParsedMunroList()
 }
 
 Munro *-- HillCategory
+MunroList *-- Munro
+DataParser *-- MunroList
+DataParser *-- Munro
 @enduml

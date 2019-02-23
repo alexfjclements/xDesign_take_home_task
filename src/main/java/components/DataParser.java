@@ -4,7 +4,6 @@ import models.Munro;
 import models.MunroList;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -13,10 +12,10 @@ public class DataParser {
     private ArrayList<String> params = new ArrayList<>();
 
 
-    public void dataBuilder() throws IOException {
-        String fileName = "/Users/alexanderclements/Documents/projects/xDesign_takehome/munrotab_v6.2.csv";
+    public void dataBuilder(String fileName) throws IOException {
+        String filePath = pathNameBuilder(fileName);
 
-        FileReader fileReader = new FileReader(fileName);
+        FileReader fileReader = new FileReader(filePath);
 
         try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             String line;
@@ -29,7 +28,7 @@ public class DataParser {
     }
 
     private String pathNameBuilder(String filename) {
-        return "" + filename + ".csv";
+        return "/Users/alexanderclements/Documents/projects/xDesign_takehome/" + filename + ".csv";
     }
 
     private void addToList(ArrayList munroDetails) {
@@ -41,13 +40,12 @@ public class DataParser {
         if (line.size() != 29 || line.get(0).startsWith("Running No")) {
             return;
         } else {
-
             params = line;
             addToList(params);
         }
     }
 
-    public MunroList parsedMunroList() {
+    public MunroList getParsedMunroList() {
         return munroList;
     }
 }
