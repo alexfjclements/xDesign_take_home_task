@@ -20,4 +20,9 @@ public class DataParserTest {
     public void getMunroListFromFile() {
         assertEquals(402, dataParser.getParsedMunroList().getMunroList().size());
     }
+
+    @Test
+    public void testMunroListSample() {
+        assertEquals("Stuc a' Chroin", dataParser.getParsedMunroList().getMunroList().get(2).getName());
+    }
 }
