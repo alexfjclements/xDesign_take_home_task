@@ -4,13 +4,13 @@ import models.Munro;
 import models.MunroList;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DataParser {
     private MunroList munroList = new MunroList();
-//    private ArrayList<String> params = new ArrayList<String>();
-    private String params;
+    private ArrayList<String> params = new ArrayList<>();
 
 
     public void dataBuilder() throws IOException {
@@ -22,15 +22,10 @@ public class DataParser {
             String line;
 
             while ((line = bufferedReader.readLine()) != null) {
-                parseLine(line);
+                ArrayList<String> paramsList = new ArrayList<>(Arrays.asList(line.split(",")));
+                parseLine(paramsList);
             }
         }
-        catch(IOException e) {
-            e.printStackTrace();
-        }
-
-//        Running No,DoBIH Number,Streetmap,Geograph,Hill-bagging,Name,SMC Section,RHB Section,_Section,Height (m),Height (ft),Map 1:50,Map 1:25,Grid Ref,GridRefXY,xcoord,ycoord,1891,1921,1933,1953,1969,1974,1981,1984,1990,1997,Post 1997,Comments
-
     }
 
     private String pathNameBuilder(String filename) {
@@ -40,22 +35,16 @@ public class DataParser {
     private void addToList(ArrayList munroDetails) {
         Munro munroToAdd = new Munro(munroDetails);
         munroList.addMunro(munroToAdd);
-//        params.clear();
     }
 
-    private void parseLine(String line) {
-//        if (line.startsWith("Running")) {
-//            return;
-//        }
+    private void parseLine(ArrayList<String> line) {
+        if (line.size() != 29 || line.get(0).startsWith("Running No")) {
+            return;
+        } else {
 
-//        ArrayList<String> params = new ArrayList<>(Arrays.asList(line.split(",")));
-        params = line;
-        testReturnParams();
-//        addToList(params);
-    }
-
-    public String testReturnParams(){
-        return params;
+            params = line;
+            addToList(params);
+        }
     }
 
     public MunroList parsedMunroList() {

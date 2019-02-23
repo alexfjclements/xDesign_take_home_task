@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Munro {
 
     private String name;
-    private Integer height;
+    private Double height;
     private Enum type;
     private String gridReference;
 
     public Munro(ArrayList<String> params) {
         this.name = params.get(6);
-        this.height = Integer.parseInt(params.get(10));
+        this.height = Double.parseDouble(params.get(10));
         String rawType = params.get(28);
         defineType(rawType);
         this.gridReference = params.get(14);
@@ -29,7 +29,7 @@ public class Munro {
         return name;
     }
 
-    public Integer getHeight() {
+    public Double getHeight() {
         return height;
     }
 

@@ -18,6 +18,6 @@ public class DataParserTest {
 
     @Test
     public void getMunroListFromFile() {
-        assertEquals("602", dataParser.testReturnParams());
+        assertEquals(402, dataParser.parsedMunroList().getMunroList().size());
     }
 }
