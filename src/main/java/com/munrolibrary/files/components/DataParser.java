@@ -43,7 +43,7 @@ public class DataParser {
     }
 
     private void parseLine(ArrayList<String> line) {
-        if (line.size() != 29 || line.get(0).startsWith("Running No") || line.get(28) == "") {
+        if (line.size() != 29 || line.get(0).startsWith("Running No") || line.get(28) == null) {
             return;
         } else {
             params = line;

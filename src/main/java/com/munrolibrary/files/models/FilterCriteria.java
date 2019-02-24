@@ -4,6 +4,8 @@ public enum FilterCriteria {
     HEIGHTASCENDING,
     HEIGHTDESCENDING,
     ATOZ,
-    ZTOA
+    ZTOA,
+    MUNRO,
+    TOP
 
 }

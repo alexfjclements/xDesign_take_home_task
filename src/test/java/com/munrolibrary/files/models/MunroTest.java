@@ -57,7 +57,7 @@ public class MunroTest {
     // workaround by converting height to string for the test
     @Test
     public void getHeight() {
-        assertEquals("931", munro.getHeight().toString());
+        assertEquals("931.0", munro.getHeight().toString());
     }
 
     @Test

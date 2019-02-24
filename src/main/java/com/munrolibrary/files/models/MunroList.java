@@ -26,29 +26,15 @@ public class MunroList {
 
         errorHandling(numericalFilterCriteria);
 
-        if (numericalFilterCriteria.containsKey("minHeight")){
-            minHeightFilter(numericalFilterCriteria.get("minHeight"));
-        }
+        munroTypePreference(filterCriteria);
 
-        if (numericalFilterCriteria.containsKey("maxHeight")){
-            maxHeightFilter(numericalFilterCriteria.get("maxHeight"));
-        }
+        munroHeightLimits(numericalFilterCriteria);
 
-        if (filterCriteria.contains(FilterCriteria.HEIGHTASCENDING)) {
-            sortHeightAscending();
-        } else if (filterCriteria.contains(FilterCriteria.HEIGHTDESCENDING)) {
-            sortHeightDescending();
-        }
+        munroHeightOrder(filterCriteria);
 
-        if (filterCriteria.contains(FilterCriteria.ATOZ)) {
-            sortAToZ();
-        } else if (filterCriteria.contains(FilterCriteria.ZTOA)){
-            sortZToA();
-        }
+        munroNameOrder(filterCriteria);
 
-        if (numericalFilterCriteria.containsKey("NumberToDisplay")){
-            truncateList(numericalFilterCriteria.get("NumberToDisplay"));
-        }
+        listToBeTruncated(numericalFilterCriteria);
 
         return filteredMunroList;
     }
@@ -104,6 +90,56 @@ public class MunroList {
             if (numericalQueryElements.get("maxHeight") < numericalQueryElements.get("minHeight")){
                 System.out.println("Invalid query. Max height should be greater than min height.");
             }
+        }
+    }
+
+    private void munroTypePreference(ArrayList<Enum> filterCriteria){
+
+        if (filterCriteria.contains(FilterCriteria.MUNRO)) {
+            reduceToMunro();
+        } else if (filterCriteria.contains(FilterCriteria.TOP)) {
+            reduceToTop();
+        }
+
+    }
+
+    private void reduceToMunro(){
+        filteredMunroList.removeIf((munro) -> (munro.getType() == MunroType.MUNROTOP));
+    }
+
+    private void reduceToTop(){
+        filteredMunroList.removeIf((munro) -> (munro.getType() == MunroType.MUNRO));
+    }
+
+    private void munroHeightLimits(HashMap<String, Integer> numericalFilterCriteria){
+        if (numericalFilterCriteria.containsKey("minHeight")){
+            minHeightFilter(numericalFilterCriteria.get("minHeight"));
+        }
+
+        if (numericalFilterCriteria.containsKey("maxHeight")){
+            maxHeightFilter(numericalFilterCriteria.get("maxHeight"));
+        }
+    }
+
+    private void munroHeightOrder(ArrayList<Enum> filterCriteria){
+        if (filterCriteria.contains(FilterCriteria.HEIGHTASCENDING)) {
+            sortHeightAscending();
+        } else if (filterCriteria.contains(FilterCriteria.HEIGHTDESCENDING)) {
+            sortHeightDescending();
+        }
+    }
+
+    private void munroNameOrder(ArrayList<Enum> filterCriteria){
+        if (filterCriteria.contains(FilterCriteria.ATOZ)) {
+            sortAToZ();
+        } else if (filterCriteria.contains(FilterCriteria.ZTOA)){
+            sortZToA();
+        }
+    }
+
+    private void listToBeTruncated(HashMap<String, Integer> numericalFilterCriteria){
+        if (numericalFilterCriteria.containsKey("NumberToDisplay")){
+            truncateList(numericalFilterCriteria.get("NumberToDisplay"));
         }
     }
 }

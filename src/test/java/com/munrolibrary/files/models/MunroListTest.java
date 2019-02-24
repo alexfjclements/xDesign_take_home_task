@@ -173,4 +173,26 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals("Aonach Mor", sortedList.get(0).getName());
     }
+
+    @Test
+    public void canRemoveMunroTops(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.TOP);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals(166, sortedList.size());
+    }
+
+    @Test
+    public void canRemoveMunroTypeMunro(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.MUNRO);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals(236, sortedList.size());
+    }
 }

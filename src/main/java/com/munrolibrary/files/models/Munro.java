@@ -20,10 +20,10 @@ public class Munro implements Comparable<Munro>{
         this.gridReference = params.get(14);
     }
 
-    private void defineType(String rawType) {
-        if (rawType == "MUN") {
+    private void defineType(String rawTypeForEvaluation) {
+        if (rawTypeForEvaluation.contains("MUN")) {
             this.type = MunroType.MUNRO;
-        } else if (rawType == "TOP") {
+        } else if (rawTypeForEvaluation.contains("TOP")) {
             this.type = MunroType.MUNROTOP;
         }
     }
