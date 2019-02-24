@@ -18,10 +18,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/Munro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="211">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/MunroList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
+            <state relative-caret-position="363">
+              <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#267#268#0" expanded="true" />
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/munrolibrary/files/models/MunroListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+            <state relative-caret-position="1890">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
         </entry>
@@ -87,10 +88,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/components/DataParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="271">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1662#1663#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -290,7 +292,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551018616154" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551021986192" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -324,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MunroListTest.canTruncateList">
+  <component name="RunManager" selected="JUnit.MunroListTest">
     <configuration name="MunroListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xDesign_takehome" />
       <extension name="coverage">
@@ -336,38 +338,6 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.models.MunroListTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MunroListTest.canSortHeightByAscending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xDesign_takehome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.munrolibrary.files.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.munrolibrary.files.models" />
-      <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.models.MunroListTest" />
-      <option name="METHOD_NAME" value="canSortHeightByAscending" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MunroListTest.canSortHeightByDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xDesign_takehome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.munrolibrary.files.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.munrolibrary.files.models" />
-      <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.models.MunroListTest" />
-      <option name="METHOD_NAME" value="canSortHeightByDescending" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -404,13 +374,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MunroListTest.canTruncateWithMaxHeight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xDesign_takehome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.munrolibrary.files.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.munrolibrary.files.models" />
+      <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.models.MunroListTest" />
+      <option name="METHOD_NAME" value="canTruncateWithMaxHeight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MunroListTest.canTruncateWithMinHeight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xDesign_takehome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.munrolibrary.files.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.munrolibrary.files.models" />
+      <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.models.MunroListTest" />
+      <option name="METHOD_NAME" value="canTruncateWithMinHeight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MunroListTest.canTruncateList" />
         <item itemvalue="JUnit.MunroListTest" />
+        <item itemvalue="JUnit.MunroListTest.canTruncateWithMinHeight" />
+        <item itemvalue="JUnit.MunroListTest.canTruncateWithMaxHeight" />
+        <item itemvalue="JUnit.MunroListTest.canTruncateList" />
         <item itemvalue="JUnit.MunroListTest.canSortNameAToZ" />
-        <item itemvalue="JUnit.MunroListTest.canSortHeightByDescending" />
-        <item itemvalue="JUnit.MunroListTest.canSortHeightByAscending" />
       </list>
     </recent_temporary>
   </component>
@@ -428,35 +430,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataParserTest - 2019.02.24 at 10h 37m 59s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 00m 45s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest - 2019.02.24 at 13h 50m 24s.xml">
-      <configuration name="MunroListTest" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 01m 03s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canSortHeightByAscending - 2019.02.24 at 13h 53m 30s.xml">
-      <configuration name="MunroListTest.canSortHeightByAscending" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 02m 09s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canSortHeightByDescending - 2019.02.24 at 13h 58m 04s.xml">
-      <configuration name="MunroListTest.canSortHeightByDescending" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 02m 20s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canSortHeightByDescending - 2019.02.24 at 13h 58m 18s.xml">
-      <configuration name="MunroListTest.canSortHeightByDescending" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 09m 16s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canSortNameAToZ - 2019.02.24 at 14h 08m 27s.xml">
-      <configuration name="MunroListTest.canSortNameAToZ" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 09m 54s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canSortNameAToZ - 2019.02.24 at 14h 09m 45s.xml">
-      <configuration name="MunroListTest.canSortNameAToZ" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMaxHeight - 2019.02.24 at 15h 12m 37s.xml">
+      <configuration name="MunroListTest.canTruncateWithMaxHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest - 2019.02.24 at 14h 14m 17s.xml">
-      <configuration name="MunroListTest" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMaxHeight - 2019.02.24 at 15h 13m 41s.xml">
+      <configuration name="MunroListTest.canTruncateWithMaxHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest - 2019.02.24 at 14h 14m 39s.xml">
-      <configuration name="MunroListTest" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMaxHeight - 2019.02.24 at 15h 20m 47s.xml">
+      <configuration name="MunroListTest.canTruncateWithMaxHeight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MunroListTest_canTruncateList - 2019.02.24 at 14h 27m 08s.xml">
-      <configuration name="MunroListTest.canTruncateList" configurationId="JUnit" />
+    <history-entry file="MunroListTest_canTruncateWithMinHeight - 2019.02.24 at 15h 23m 25s.xml">
+      <configuration name="MunroListTest.canTruncateWithMinHeight" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -472,8 +474,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -595,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/components/DataParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/munrolibrary/files/components/DataParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -630,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/Munro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/controllers/MunroController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -657,10 +639,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/components/DataParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/Munro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/MunroList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
+        <state relative-caret-position="363">
+          <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#267#268#0" expanded="true" />
@@ -675,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/munrolibrary/files/models/MunroListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+        <state relative-caret-position="1890">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>

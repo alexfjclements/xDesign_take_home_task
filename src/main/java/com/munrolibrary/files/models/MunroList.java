@@ -40,6 +40,13 @@ public class MunroList {
             truncateList(numericalFilterCriteria.get("NoToDisplay"));
         }
 
+        if (numericalFilterCriteria.containsKey("minHeight")){
+            minHeightFilter(numericalFilterCriteria.get("minHeight"));
+        }
+
+        if (numericalFilterCriteria.containsKey("maxHeight")){
+            maxHeightFilter(numericalFilterCriteria.get("maxHeight"));
+        }
 
         return filteredMunroList;
     }
@@ -66,5 +73,27 @@ public class MunroList {
         List<Munro> filteredListUpdate = new ArrayList<>();
         filteredListUpdate = filteredMunroList.subList(0, noToDisplay);
         filteredMunroList = new ArrayList<>(filteredListUpdate);
+    }
+
+    private void minHeightFilter(int minHeight){
+        sortHeightDescending();
+
+        for (int i = 0; i < filteredMunroList.size(); i++){
+            if (filteredMunroList.get(i).getHeight() < minHeight){
+                truncateList(i);
+                break;
+            }
+        }
+    }
+
+    private void maxHeightFilter(int maxHeight){
+        sortHeightAscending();
+
+        for (int i = 0; i < filteredMunroList.size(); i++){
+            if (filteredMunroList.get(i).getHeight() > maxHeight){
+                truncateList(i);
+                break;
+            }
+        }
     }
 }
