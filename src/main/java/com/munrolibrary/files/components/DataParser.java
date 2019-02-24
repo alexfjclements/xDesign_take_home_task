@@ -1,14 +1,20 @@
-package components;
+package com.munrolibrary.files.components;
 
-import models.Munro;
-import models.MunroList;
+import com.munrolibrary.files.models.Munro;
+import com.munrolibrary.files.models.MunroList;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+@Component
 public class DataParser {
+    @Autowired
     private MunroList munroList = new MunroList();
+
+    @Autowired
     private ArrayList<String> params = new ArrayList<>();
 
 

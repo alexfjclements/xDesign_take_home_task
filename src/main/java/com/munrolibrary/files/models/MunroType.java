@@ -1,4 +1,4 @@
-package models;
+package com.munrolibrary.files.models;
 
 public enum MunroType {
     MUNRO("Munro"),

@@ -1,8 +1,11 @@
-package models;
+package com.munrolibrary.files.models;
+
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
-public class Munro {
+@Component
+public class Munro implements Comparable<Munro>{
 
     private String name;
     private Double height;
@@ -39,5 +42,11 @@ public class Munro {
 
     public String getGridReference() {
         return gridReference;
+    }
+
+    public int compareTo(Munro munro) {
+        if (height < munro.getHeight()) return -1;
+        if (height > munro.getHeight()) return 1;
+        return 0;
     }
 }

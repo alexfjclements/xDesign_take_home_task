@@ -1,20 +1,24 @@
-package models;
+package com.munrolibrary.files.models;
 
+import com.munrolibrary.files.components.DataParser;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MunroListTest {
     Munro munro;
     Munro munro2;
     Munro munro3;
     MunroList munroList;
+    DataParser dataParser;
 
     @Before
-    public void before() {
+    public void before() throws IOException {
         ArrayList<String> params = new ArrayList<String>();
         params.add("1");
         params.add("1");
@@ -50,11 +54,14 @@ public class MunroListTest {
         munro2 = new Munro(params);
         munro3 = new Munro(params);
         munroList = new MunroList();
+
+        dataParser = new DataParser();
+        dataParser.dataBuilder("munrotab_v6.2");
     }
 
     @Test
-    public void getMunroList() {
-        assertEquals(0, munroList.getMunroList().size());
+    public void getFullMunroList() {
+        assertEquals(0, munroList.getFullMunroList().size());
     }
 
     @Test
@@ -62,6 +69,17 @@ public class MunroListTest {
         munroList.addMunro(munro);
         munroList.addMunro(munro2);
         munroList.addMunro(munro3);
-        assertEquals(3, munroList.getMunroList().size());
+        assertEquals(3, munroList.getFullMunroList().size());
+    }
+
+    @Test
+    public void canSortHeightByAscending(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.HEIGHTASCENDING);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals("Beinn Teallach", sortedList.get(0).getName());
     }
 }

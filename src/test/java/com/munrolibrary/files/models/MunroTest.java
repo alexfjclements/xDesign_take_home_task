@@ -1,4 +1,4 @@
-package models;
+package com.munrolibrary.files.models;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,11 +1,11 @@
-package components;
+package com.munrolibrary.files.components;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class DataParserTest {
     DataParser dataParser;
@@ -18,11 +18,11 @@ public class DataParserTest {
 
     @Test
     public void getMunroListFromFile() {
-        assertEquals(402, dataParser.getParsedMunroList().getMunroList().size());
+        assertEquals(402, dataParser.getParsedMunroList().getFullMunroList().size());
     }
 
     @Test
     public void testMunroListSample() {
-        assertEquals("Stuc a' Chroin", dataParser.getParsedMunroList().getMunroList().get(2).getName());
+        assertEquals("Stuc a' Chroin", dataParser.getParsedMunroList().getFullMunroList().get(2).getName());
     }
 }
