@@ -121,7 +121,7 @@ public class MunroListTest {
         ArrayList<Enum> filterParams = new ArrayList<>();
 
         HashMap<String, Integer> filterNumbers = new HashMap<>();
-        filterNumbers.put("NoToDisplay", 10);
+        filterNumbers.put("NumberToDisplay", 10);
 
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals(10, sortedList.size());

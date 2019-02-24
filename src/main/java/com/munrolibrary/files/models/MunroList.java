@@ -24,6 +24,8 @@ public class MunroList {
     public ArrayList<Munro> filterMunroList(ArrayList<Enum> filterCriteria, HashMap<String, Integer> numericalFilterCriteria) {
         filteredMunroList = new ArrayList<>(munroList);
 
+        errorHandling(numericalFilterCriteria);
+
         if (numericalFilterCriteria.containsKey("minHeight")){
             minHeightFilter(numericalFilterCriteria.get("minHeight"));
         }
@@ -44,8 +46,8 @@ public class MunroList {
             sortZToA();
         }
 
-        if (numericalFilterCriteria.containsKey("NoToDisplay")){
-            truncateList(numericalFilterCriteria.get("NoToDisplay"));
+        if (numericalFilterCriteria.containsKey("NumberToDisplay")){
+            truncateList(numericalFilterCriteria.get("NumberToDisplay"));
         }
 
         return filteredMunroList;
@@ -93,6 +95,14 @@ public class MunroList {
             if (filteredMunroList.get(i).getHeight() > maxHeight){
                 truncateList(i);
                 break;
+            }
+        }
+    }
+
+    private void errorHandling(HashMap<String, Integer> numericalQueryElements){
+        if (numericalQueryElements.containsKey("maxHeight") && numericalQueryElements.containsKey("minHeight")){
+            if (numericalQueryElements.get("maxHeight") < numericalQueryElements.get("minHeight")){
+                System.out.println("Invalid query. Max height should be greater than min height.");
             }
         }
     }
