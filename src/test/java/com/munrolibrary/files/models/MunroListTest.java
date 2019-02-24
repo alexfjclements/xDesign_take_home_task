@@ -93,4 +93,15 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals("Ben Nevis", sortedList.get(0).getName());
     }
+
+    @Test
+    public void canSortNameAToZ(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.ATOZ);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals("A' Bhuidheanach Bheag - Glas Mheall Mor", sortedList.get(0).getName());
+    }
 }

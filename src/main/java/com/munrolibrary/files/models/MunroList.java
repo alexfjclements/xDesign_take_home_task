@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 @Component
@@ -32,6 +33,12 @@ public class MunroList {
             sortHeightDescending();
         }
 
+        if (filterCriteria.contains(FilterCriteria.ATOZ)) {
+            sortAToZ();
+        } else if (filterCriteria.contains(FilterCriteria.ZTOA)){
+//            sortZToA();
+        }
+
 
         return filteredMunroList;
     }
@@ -42,5 +49,9 @@ public class MunroList {
 
     private void sortHeightDescending(){
         Collections.sort(filteredMunroList, Collections.reverseOrder());
+    }
+
+    private void sortAToZ(){
+        Collections.sort(filteredMunroList, Comparator.comparing(Munro::getName));
     }
 }
