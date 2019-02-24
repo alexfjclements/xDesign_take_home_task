@@ -148,4 +148,16 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals(392, sortedList.size());
     }
+
+    @Test
+    public void canTruncateWithMaxAndMinHeight(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+        filterNumbers.put("maxHeight", 1214);
+        filterNumbers.put("minHeight", 1210);
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals(2, sortedList.size());
+    }
 }
