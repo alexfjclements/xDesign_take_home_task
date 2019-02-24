@@ -115,4 +115,15 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals("Tom a' Choinich - Tom a' Choinich Beag", sortedList.get(0).getName());
     }
+
+    @Test
+    public void canTruncateList(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+        filterNumbers.put("NoToDisplay", 10);
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals(10, sortedList.size());
+    }
 }

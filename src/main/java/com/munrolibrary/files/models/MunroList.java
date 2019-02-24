@@ -2,10 +2,7 @@ package com.munrolibrary.files.models;
 
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
+import java.util.*;
 
 @Component
 public class MunroList {
@@ -39,6 +36,10 @@ public class MunroList {
             sortZToA();
         }
 
+        if (numericalFilterCriteria.containsKey("NoToDisplay")){
+            truncateList(numericalFilterCriteria.get("NoToDisplay"));
+        }
+
 
         return filteredMunroList;
     }
@@ -59,5 +60,11 @@ public class MunroList {
     private void sortZToA(){
         sortAToZ();
         Collections.reverse(filteredMunroList);
+    }
+
+    private void truncateList(int noToDisplay){
+        List<Munro> filteredListUpdate = new ArrayList<>();
+        filteredListUpdate = filteredMunroList.subList(0, noToDisplay);
+        filteredMunroList = new ArrayList<>(filteredListUpdate);
     }
 }
