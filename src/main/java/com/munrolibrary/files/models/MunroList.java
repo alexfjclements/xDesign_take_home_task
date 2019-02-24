@@ -24,6 +24,14 @@ public class MunroList {
     public ArrayList<Munro> filterMunroList(ArrayList<Enum> filterCriteria, HashMap<String, Integer> numericalFilterCriteria) {
         filteredMunroList = new ArrayList<>(munroList);
 
+        if (numericalFilterCriteria.containsKey("minHeight")){
+            minHeightFilter(numericalFilterCriteria.get("minHeight"));
+        }
+
+        if (numericalFilterCriteria.containsKey("maxHeight")){
+            maxHeightFilter(numericalFilterCriteria.get("maxHeight"));
+        }
+
         if (filterCriteria.contains(FilterCriteria.HEIGHTASCENDING)) {
             sortHeightAscending();
         } else if (filterCriteria.contains(FilterCriteria.HEIGHTDESCENDING)) {
@@ -38,14 +46,6 @@ public class MunroList {
 
         if (numericalFilterCriteria.containsKey("NoToDisplay")){
             truncateList(numericalFilterCriteria.get("NoToDisplay"));
-        }
-
-        if (numericalFilterCriteria.containsKey("minHeight")){
-            minHeightFilter(numericalFilterCriteria.get("minHeight"));
-        }
-
-        if (numericalFilterCriteria.containsKey("maxHeight")){
-            maxHeightFilter(numericalFilterCriteria.get("maxHeight"));
         }
 
         return filteredMunroList;
