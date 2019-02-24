@@ -104,4 +104,15 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals("A' Bhuidheanach Bheag - Glas Mheall Mor", sortedList.get(0).getName());
     }
+
+    @Test
+    public void canSortNameZToA(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.ZTOA);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals("Tom a' Choinich - Tom a' Choinich Beag", sortedList.get(0).getName());
+    }
 }

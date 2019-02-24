@@ -30,16 +30,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/MunroList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            <state relative-caret-position="188">
+              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#267#268#0" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#1193#1194#0" expanded="true" />
                 <element signature="e#1244#1245#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
                 <element signature="e#1446#1447#0" expanded="true" />
                 <element signature="e#1533#1534#0" expanded="true" />
               </folding>
@@ -50,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/munrolibrary/files/models/MunroListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+            <state relative-caret-position="286">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
@@ -292,7 +290,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551017380956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551017675045" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -326,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MunroListTest.canSortNameAToZ">
+  <component name="RunManager" selected="JUnit.MunroListTest">
     <configuration name="MunroLibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.munrolibrary.files.MunroLibraryApplication" />
       <module name="xDesign_takehome" />
@@ -399,10 +397,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MunroListTest" />
         <item itemvalue="JUnit.MunroListTest.canSortNameAToZ" />
         <item itemvalue="JUnit.MunroListTest.canSortHeightByDescending" />
         <item itemvalue="JUnit.MunroListTest.canSortHeightByAscending" />
-        <item itemvalue="JUnit.MunroListTest" />
         <item itemvalue="Application.MunroLibraryApplication" />
       </list>
     </recent_temporary>
@@ -421,9 +419,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataParserTest - 2019.02.23 at 18h 43m 13s.xml">
-      <configuration name="DataParserTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataParserTest - 2019.02.23 at 18h 43m 43s.xml">
       <configuration name="DataParserTest" configurationId="JUnit" />
     </history-entry>
@@ -449,6 +444,9 @@
       <configuration name="MunroListTest.canSortHeightByDescending" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MunroListTest_canSortNameAToZ - 2019.02.24 at 14h 08m 27s.xml">
+      <configuration name="MunroListTest.canSortNameAToZ" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MunroListTest_canSortNameAToZ - 2019.02.24 at 14h 09m 45s.xml">
       <configuration name="MunroListTest.canSortNameAToZ" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -652,16 +650,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/munrolibrary/files/models/MunroList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="188">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#317#318#0" expanded="true" />
             <element signature="e#1193#1194#0" expanded="true" />
             <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
             <element signature="e#1446#1447#0" expanded="true" />
             <element signature="e#1533#1534#0" expanded="true" />
           </folding>
@@ -670,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/munrolibrary/files/models/MunroListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+        <state relative-caret-position="286">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>

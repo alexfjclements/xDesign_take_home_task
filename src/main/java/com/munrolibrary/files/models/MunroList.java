@@ -36,7 +36,7 @@ public class MunroList {
         if (filterCriteria.contains(FilterCriteria.ATOZ)) {
             sortAToZ();
         } else if (filterCriteria.contains(FilterCriteria.ZTOA)){
-//            sortZToA();
+            sortZToA();
         }
 
 
@@ -48,10 +48,16 @@ public class MunroList {
     }
 
     private void sortHeightDescending(){
-        Collections.sort(filteredMunroList, Collections.reverseOrder());
+        sortHeightAscending();
+        Collections.reverse(filteredMunroList);
     }
 
     private void sortAToZ(){
         Collections.sort(filteredMunroList, Comparator.comparing(Munro::getName));
+    }
+
+    private void sortZToA(){
+        sortAToZ();
+        Collections.reverse(filteredMunroList);
     }
 }
