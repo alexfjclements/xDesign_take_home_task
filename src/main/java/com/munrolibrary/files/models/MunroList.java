@@ -29,7 +29,7 @@ public class MunroList {
         if (filterCriteria.contains(FilterCriteria.HEIGHTASCENDING)) {
             sortHeightAscending();
         } else if (filterCriteria.contains(FilterCriteria.HEIGHTDESCENDING)) {
-//            sortHeightDescending();
+            sortHeightDescending();
         }
 
 
@@ -38,5 +38,9 @@ public class MunroList {
 
     private void sortHeightAscending(){
         Collections.sort(filteredMunroList);
+    }
+
+    private void sortHeightDescending(){
+        Collections.sort(filteredMunroList, Collections.reverseOrder());
     }
 }

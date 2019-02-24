@@ -82,4 +82,15 @@ public class MunroListTest {
         ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
         assertEquals("Beinn Teallach", sortedList.get(0).getName());
     }
+
+    @Test
+    public void canSortHeightByDescending(){
+        ArrayList<Enum> filterParams = new ArrayList<>();
+        filterParams.add(FilterCriteria.HEIGHTDESCENDING);
+
+        HashMap<String, Integer> filterNumbers = new HashMap<>();
+
+        ArrayList<Munro> sortedList = dataParser.getParsedMunroList().filterMunroList(filterParams, filterNumbers);
+        assertEquals("Ben Nevis", sortedList.get(0).getName());
+    }
 }
