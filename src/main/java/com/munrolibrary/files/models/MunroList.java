@@ -1,10 +1,7 @@
 package com.munrolibrary.files.models;
 
-import org.springframework.stereotype.Component;
-
 import java.util.*;
 
-@Component
 public class MunroList {
     private ArrayList<Munro> munroList;
     private ArrayList<Munro> filteredMunroList;
@@ -36,7 +33,7 @@ public class MunroList {
 
         listToBeTruncated(numericalFilterCriteria);
 
-        return filteredMunroList;
+        return new ArrayList<>(filteredMunroList);
     }
 
     private void sortHeightAscending(){

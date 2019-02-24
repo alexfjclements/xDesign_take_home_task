@@ -1,9 +1,26 @@
 @startuml
 class MunroList {
 	- ArrayList<Munro> munroList
+    - ArrayList<Munro> filteredMunroList
 
     + addMunro()
-    + getMunroList()
+    + getFullMunroList()
+    + filterMunroList()
+    - sortHeightAscending()
+    - sortHeightDescending()
+    - sortAToZ()
+    - sortZToA()
+    - truncateList()
+    - minHeightFilter()
+    - maxHeightFilter()
+    - errorHandling()
+    - munroTypePreference()
+    - reduceToMunro()
+    - reduceToTop()
+    - munroHeightLimits()
+    - munroHeightOrder()
+    - munroNameOrder()
+    - listToBeTruncated()
 }
 
 class Munro {
@@ -17,6 +34,7 @@ class Munro {
     + getHeight()
     + getType()
     + getGridReference()
+    + compareTo()
 }
 
 enum HillCategory {
@@ -39,8 +57,18 @@ class DataParser {
     + getParsedMunroList()
 }
 
+enum FilterCriteria {
+    HEIGHTASCENDING
+    HEIGHTDESCENDING
+    ATOZ
+    ZTOA
+    MUNRO
+    TOP
+}
+
 Munro *-- HillCategory
 MunroList *-- Munro
+MunroList *-- FilterCriteria
 DataParser *-- MunroList
 DataParser *-- Munro
 @enduml
